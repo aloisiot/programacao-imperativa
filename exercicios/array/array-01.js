@@ -1,6 +1,6 @@
 let cores = ['Azul', 'Branco', 'Verde'];
 
-console.log('O método push inserindo novo elemento à última posição do array.');
+console.log('O método push inserindo ou mais elementos ao fim.');
 cores.push('Lilas', 'Laranja');
 
 
@@ -9,7 +9,7 @@ let ultimaCor = cores.pop();
 console.log(ultimaCor);
 console.log(cores);
 
-console.log('Também retorna o elemento removido, podendo assim ser armazenado em uma variável.\n');
+console.log('Remove o primeiro elemento,\nTambém retorna o elemento removido, podendo assim ser armazenado em uma variável.\n');
 let primeitoElemento = cores.shift();
 console.log(primeitoElemento);
 console.log(cores);
