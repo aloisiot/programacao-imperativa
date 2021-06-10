@@ -1,0 +1,1 @@
+let pessoas = ['Ana', 'Lúcia', 'Márcio', 'Tereza'];
