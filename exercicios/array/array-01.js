@@ -19,6 +19,6 @@ let primeitoElemento = cores.shift();
 console.log(primeitoElemento);
 console.log(cores);
 
-//O unshift() insere elementos no inicio do array.
+//O unshift() insere um ou mais elementos no inicio do array.
 cores.unshift('Roxo');
 console.log(cores);
