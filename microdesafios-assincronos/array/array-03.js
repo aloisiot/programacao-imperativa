@@ -1,4 +1,4 @@
-// Acesse elementos específicos de um array.
+// Imprimindo elementos específicos de um array.
 
 let nomes = ['Alana', 'Diego', 'Silvia', 'Alice'];
 

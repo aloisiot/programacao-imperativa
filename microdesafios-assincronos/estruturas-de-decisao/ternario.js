@@ -1,3 +1,5 @@
+// Condicional ternario.
+
 let linguagem = 'Java';
 
 linguagem == 'JavaScript'?

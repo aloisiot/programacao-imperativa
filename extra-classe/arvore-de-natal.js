@@ -5,7 +5,7 @@ x.forEach(row => {
         console.log([
             ...new Array(9-i).fill('.'),
             ...new Array(1+i*2).fill('^'),
-            ...new Array(9-1).fill('.')
+            ...new Array(9-i).fill('.')
         ].join(''));
     });
 });

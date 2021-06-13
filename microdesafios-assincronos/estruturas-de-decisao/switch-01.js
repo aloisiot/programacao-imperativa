@@ -1,3 +1,5 @@
+// Retorna a situação do aluno em relação à nota do mesmo.
+
 let nota = 8.5;
 
 switch (nota) {

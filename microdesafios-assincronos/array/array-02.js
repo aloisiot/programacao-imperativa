@@ -1,3 +1,5 @@
+// Métodos para manipulação de arrays
+
 let pessoas = ['Ana', 'Lúcia', 'Márcio', 'Tereza', 'Ana', 'Ana'];
 
 console.log('O método indexOf retorna o ìndice de um elemento em um array.');

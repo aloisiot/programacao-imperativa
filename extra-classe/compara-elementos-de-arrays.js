@@ -1,4 +1,5 @@
-// Compare elementos de um array com elementos de outro array.
+/* Compara elementos de um array com elementos de outro array.
+Se ouverem nomes iguais nas listade de aprovado e reprovado imprimirá uma mensagem de alerta. */
 
 let aprovados = ['Alana', 'Diego', 'Silvia', 'Alice'];
 

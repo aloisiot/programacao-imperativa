@@ -1,4 +1,4 @@
-// Percorra um array e modifique cada um dos elementos
+// Percorrendo um array e modificando cada um dos elementos
 
 let nomes = ['Alana',
             'Diego',

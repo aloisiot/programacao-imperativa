@@ -1,3 +1,5 @@
+// Métodos para manipulação de arrays
+
 let cores = ['Azul', 'Branco', 'Verde'];
 
 console.log('O método push inserindo ou mais elementos ao fim.');
