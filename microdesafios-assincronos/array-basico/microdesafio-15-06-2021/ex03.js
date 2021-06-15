@@ -1,3 +1,5 @@
+// Alterando elementos do array.
+
 const nomes = ['Murilo', 'Caio', 'Aloisio', 'Ricardo', 'Silvano'];
 
 function modify(array) {

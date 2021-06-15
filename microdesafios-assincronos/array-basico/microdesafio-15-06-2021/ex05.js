@@ -1,3 +1,5 @@
+// Imprime 25 termos da série 11 - 22 - 33 - 44, etc.
+
 let list = new Array(25);
 
 let n = 11;
