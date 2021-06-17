@@ -10,7 +10,7 @@ let andar = (time, acao2) => {
         let n = 40;
         
         // Define um tempo para interronper o movimento do carrinho.
-        let aux = time * n / 4;
+        let aux = time * n / 4 + 2000;
             
         let andando = setInterval( function (){
             
