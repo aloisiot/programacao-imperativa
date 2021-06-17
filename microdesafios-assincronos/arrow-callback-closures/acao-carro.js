@@ -1,4 +1,6 @@
-// ATENÇÃO ->  Para pleno funcionamento do programa execute pelo NODE, e nao por qualquer extenção
+// Callback, arrow function e closures.
+
+// ATENÇÃO ->  Para um pleno funcionamento do programa execute pelo terminal, e nao por qualquer extenção
 //             Antes de executar limpe o seu terminal
 
 
@@ -38,7 +40,7 @@ let andar = (time, acao2) => {
         
     }
 
-    setTimeout(andando, 2000);
+    setTimeout(andando, 1000);
 
 }
 

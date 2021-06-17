@@ -1,3 +1,6 @@
+// Callback
+// Cronometro
+
 function cronometrar () {
 let s = 1;
     setInterval(() => {
