@@ -21,6 +21,7 @@ let fatorialRecursivo = n => {
         ++aux;
         result*=aux;
         
+        // Chamada recursiva da função calc se determinada condição for atendida.
         aux!=n ? calc() : ''; 
     }
     
