@@ -1,19 +1,19 @@
 // Usando callback.
 
-let soma = (a, b) => a + b;
+const soma = (a, b) => a + b;
 
-let sub = (a, b) => a - b;
+const sub = (a, b) => a - b;
 
-let mult = (a, b) => a * b;
+const mult = (a, b) => a * b;
 
-let div = (a, b) => a / b;
+const div = (a, b) => a / b;
 
-let modulo = (a, b) => a % b;
+const modulo = (a, b) => a % b;
 
-let calcular = (n1, n2, callback) => callback(n1, n2);
+const calcular=(n1, n2, callback)=>console.log(callback(n1, n2));
 
 // Usando callback ja declarada.
-console.log(calcular(19, 40, soma));
+calcular(19, 40, soma);
 
 // Construindo callback dentro dos parâmetros.
-console.log(calcular(19, 40, (x, y) => x + y ));
+calcular(19, 40, (x, y) => x + y );
