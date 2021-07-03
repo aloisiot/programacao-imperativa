@@ -37,9 +37,7 @@ function preparar(opcao,time){
         result = 'pronto'
     }
     
-    if (time != undefined) {
-        defaultTime = time;
-    }
+    time != undefined?defaultTime = time:'';
 
     setTimeout(_=>{
         console.log(result)
