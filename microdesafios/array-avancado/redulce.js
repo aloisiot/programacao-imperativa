@@ -14,6 +14,9 @@ const formatNums = nums.reduce(
 )
 
 console.log(formatNums);
+// Simplificando
+console.log(nums.reduce((acum,e)=>acum+'-'+e));
+
 
 // Imprime a soma dos elementos do array
-console.log(nums.reduce((total,e)=>total=+e))
+console.log(nums.reduce((total,e)=>total+e));
