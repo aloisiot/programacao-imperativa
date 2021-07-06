@@ -4,9 +4,9 @@ Crie um array de números e utilize a função .reduce() para devolver uma strin
 Exemplo [1,5,9,3,7] => “1 – 5 – 9 – 3 – 7”
  */
 
-let nums = [1, 5, 9, 3, 7];
+const nums = [1, 5, 9, 3, 7];
 
-let formatNums = nums.reduce(
+const formatNums = nums.reduce(
     (acum,elem,index) => {
         index == 0? acum+=`${elem}` : acum+=` - ${elem}`;
         return acum;
@@ -14,3 +14,6 @@ let formatNums = nums.reduce(
 )
 
 console.log(formatNums);
+
+// Imprime a soma dos elementos do array
+console.log(nums.reduce((total,e)=>total=+e))
