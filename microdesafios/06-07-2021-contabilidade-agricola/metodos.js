@@ -41,3 +41,9 @@ function aleatoria(produt, nome){
     console.log(index);
     produt[index].nome = 'Melancia';
 }
+
+// Calcule o lucro total após pagar 45% do lucro em impostos.
+function lucro(produtos){
+    total = calculaTotal(produtos)
+    return total- total*0.45;
+}
