@@ -12,9 +12,8 @@ function calculaTotal(produtos) {
 
 // Permitir pesquisar um produto pelo nome e calcular seu lucro total;
 function totalDoElementoX(produtos, nome){
-    return buscador(produtos,nome).reduce((acum,elem)=>acum+elem.preco*elem.numVendas,0)
+    return calculaTotal(buscador(produtos,nome));
 }
-
 
 // Permite receber um valor e indicar todos os produtos que venderam mais que esse valor;
 function vendasAcimaDeX(produtos, x){
