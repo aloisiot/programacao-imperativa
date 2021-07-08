@@ -52,13 +52,15 @@ function Cursos(nome,notaAprovacao,maxFaltas,duracao){
         const media = aluno.calcularMedia()
         let status;
 
-        if(aluno.qtdFaltas < maxFaltas)
+        if(aluno.qtdFaltas==maxFaltas)
             media>this.notaAprovacao+this.notaAprovacao*0.1?status=true:status=false;
-        else if (media >= this.notaAprovacao){
+        else if(aluno.qtdFaltas<maxFaltas)
+            status=false
+        else if (media >= this.notaAprovacao)
             status=true;
-        }else{
+        else
             status=false;
-        }
+
 
         return status;
     }
