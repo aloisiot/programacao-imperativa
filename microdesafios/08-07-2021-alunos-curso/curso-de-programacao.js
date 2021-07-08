@@ -1,6 +1,7 @@
 const Curso = require('./cursos');
 
-const programacao = new Curso('Programação', 7, 12);
+// Instanciando objeto Curso.
+const programacao = new Curso('Programação', 7, 12,12);
 
 // Cadastrando alunos no curso programação:
 programacao.cadastrarAluno('Jonas', 'Nascimento', '10/10/2000');
@@ -15,7 +16,7 @@ programacao.cadastrarAluno('Jose', 'Abreu', '07/09/2000');
 programacao.cadastrarAluno('Leticia', 'Silva', '06/12/2001');
 
 
-// Add notas para todos os alunos:
+// Add notas para cada alunos:
 programacao.buscarPorNome('Jonas', 'Nascimento').addNotas(8,6,9,10);
 programacao.buscarPorNome('Davi', 'Santos').addNotas(5,6,5,5);
 programacao.buscarPorNome('Alice', 'Nascimento').addNotas(8,6,9,10);
@@ -27,19 +28,28 @@ programacao.buscarPorNome('Tiago', 'Sena').addNotas(5,6,5,10);
 programacao.buscarPorNome('Jose', 'Abreu').addNotas(8,6,9,10);
 programacao.buscarPorNome('Leticia', 'Silva').addNotas(10,6,9,10);
 
-// console.log(programacao);
+// Registrando faltas para Jonas Nascimento.
+programacao.registrarFaltaParaAlunoX('Jonas', 'Nascimento');
+programacao.registrarFaltaParaAlunoX('Jonas', 'Nascimento');
+programacao.registrarFaltaParaAlunoX('Jonas', 'Nascimento');
+programacao.registrarFaltaParaAlunoX('Jonas', 'Nascimento');
+programacao.registrarFaltaParaAlunoX('Jonas', 'Nascimento');
+programacao.registrarFaltaParaAlunoX('Jonas', 'Nascimento');
+
+// Imprimindo as informaçoes do curso.
+programacao.printInfo();
+
+// Imprimindo a quantidade de faltas de um aluno.
+console.log(`Faltas de Jonas Nascimento: ${programacao.buscarPorNome('Jonas', 'Nascimento').qtdFaltas}`);
+
+// Imprimindo a média geral da turma 
+console.log(`\nA média geral da turma é: ${programacao.mediaGeral().toFixed(2)}\n`);
+
 // Media de notas do aluno Jonas Nascimento.
-// console.log(programacao.buscarPorNome('Jonas','Nascimento').calcularMedia());
+programacao.pritMediaDoAlunoX('Jonas','Nascimento');
 
-// console.log(programacao.mediaGeral());
-// console.log(programacao);
+// Imprimindo a lista de aprovados.
+console.log(`\nLista de aprovados no curso de ${programacao.nome} :\n${programacao.listaAprovados().join(',\n')}\n`)
 
-// console.log(programacao.buscarPorNome('Davi', 'Santos').notas);
-
-
-// console.log(programacao.buscarPorNome('Davi', 'Santos').calcularMedia());
-// console.log(programacao);
-// console.log(programacao.situacao('Davi', 'Santos'));
-
-// console.log(programacao.buscarPorNome('Tiago', 'Sena').calcularMedia());
-console.log(programacao.listaAprovados());
+// Imprimindo a lista de reprovados.
+console.log(`\nLista de reprovados no curso de ${programacao.nome} :\n${programacao.listaReprovados().join(',\n')}\n`)
