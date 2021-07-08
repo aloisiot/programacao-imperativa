@@ -8,7 +8,7 @@ function Alunos(nome, sobrenome, nascimento){
 
     // Calcula a media de notas do aluno.
     this.calcularMedia=function(){
-        return (this.notas.reduce((acum, nota)=>acum+nota,0)/this.notas.length).toFixed(2);
+        return (this.notas.reduce((acum, nota)=>acum+nota,0)/this.notas.length);
     };
 
     // Imcrementa 1 à quantidade de faltas.
