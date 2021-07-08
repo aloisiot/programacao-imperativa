@@ -53,7 +53,7 @@ function Cursos(nome,notaAprovacao,maxFaltas,duracao){
         let status;
 
         if(aluno.qtdFaltas==maxFaltas)
-            media>this.notaAprovacao+this.notaAprovacao*0.1?status=true:status=false;
+            media>this.notaAprovacao*1.1?status=true:status=false;
         else if(aluno.qtdFaltas<maxFaltas)
             status=false
         else if (media >= this.notaAprovacao)
