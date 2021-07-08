@@ -1,4 +1,4 @@
-const Aluno=require('./aluno');
+const Alunos=require('./alunos');
 
 // Construtor para cursos.
 function Curso(nome,notaAprovacao,maxFaltas){
@@ -9,7 +9,7 @@ function Curso(nome,notaAprovacao,maxFaltas){
     
     // Adiciona um novo aluno à lista de alunos.
     this.cadastrarAluno=function(nome, sobrenome, nascimento){
-        this.listaAlunos.push(new Aluno(nome, sobrenome, nascimento));
+        this.listaAlunos.push(new Alunos(nome, sobrenome, nascimento));
     }
 
     // Retorna um aluno que tenha determinado nome e sobrenome.
@@ -45,6 +45,21 @@ function Curso(nome,notaAprovacao,maxFaltas){
         }
 
         return status;
+    }
+
+    // Percorre a lista de estudantes e retorna um array de booleanos com os resultados se os alunos aprovaram ou não.
+    this.resultadoFidal=function(){
+        let result=[];
+        this.listaAlunos.forEach(aluno=>result.push(this.situacao(aluno.nome,aluno.sobrenome)));
+        return result;
+    }
+
+    // Imprime uma lista com o nome do aluno e sua situação
+    this.listaAprovados=function(){
+        let aprovados=[];
+        let resultadoFinal=this.resultadoFidal();
+        this.listaAlunos.forEach((aluno,index)=>resultadoFinal[index]==true?aprovados.push(`${aluno.nome} ${aluno.sobrenome}`):'')
+        return aprovados;
     }
 }
 

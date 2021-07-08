@@ -1,5 +1,5 @@
-// Construtor para alunos.
-function Aluno(nome, sobrenome, nascimento){
+// Construtor para alunos:
+function Alunos(nome, sobrenome, nascimento){
     this.nome = nome;
     this.sobrenome = sobrenome;
     this.nascimento = nascimento;
@@ -20,4 +20,4 @@ function Aluno(nome, sobrenome, nascimento){
     }
 }
 
-module.exports=Aluno;
+module.exports=Alunos;
