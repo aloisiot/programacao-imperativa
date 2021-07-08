@@ -23,7 +23,7 @@ function Cursos(nome,notaAprovacao,maxFaltas,duracao){
         this.listaAlunos.push(new Alunos(nome, sobrenome, nascimento));
     }
 
-    // Retorna um aluno que tenha determinado nome e sobrenome.
+    // Busca um aluno pelo seu nome e sobrenome. Retorna um objeto.
     this.buscarPorNome=function(nome, sobrenome){
         return this.listaAlunos.find(elem=>elem.nome==nome&&elem.sobrenome==sobrenome)
     }
@@ -80,7 +80,7 @@ function Cursos(nome,notaAprovacao,maxFaltas,duracao){
         return aprovados;
     }
 
-    // Retorna uma lista com o nome dos alunos aprovados
+    // Retorna uma lista com o nome dos alunos reprovados
     this.listaReprovados=function(){
         let reprovados=[];
         let resultadoFinal=this.resultadoFidal();
