@@ -46,7 +46,7 @@ function Cursos(nome,notaAprovacao,maxFaltas,duracao){
         this.buscarPorNome(nome,sobrenome).incFaltas();
     }
 
-    // Retorna true se aprovado e false e não.
+    // Retorna true se aprovado e false se não.
     this.situacao=function(nome, sobrenome){
         const aluno = this.buscarPorNome(nome, sobrenome);
         const media = aluno.calcularMedia()
