@@ -50,17 +50,12 @@ function Cursos(nome,notaAprovacao,maxFaltas,duracao){
     this.situacao=function(nome, sobrenome){
         const aluno = this.buscarPorNome(nome, sobrenome);
         const media = aluno.calcularMedia()
-        let status;
+        let status=false;
 
         if(aluno.qtdFaltas==maxFaltas)
             media>this.notaAprovacao*1.1?status=true:status=false;
-        else if(aluno.qtdFaltas<maxFaltas)
-            status=false
-        else if (media >= this.notaAprovacao)
-            status=true;
-        else
-            status=false;
-
+        else if(aluno.qtdFaltas<maxFaltas&&media>=this.notaAprovacao)
+            status=true
 
         return status;
     }
