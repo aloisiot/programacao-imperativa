@@ -1,0 +1,22 @@
+[
+    {
+        "funcionario": "Cristina",
+        "idade": 20,
+        "salario": 5850.9,
+        "valeTransporte": true,
+        "filiacao": {
+            "pai": "Walter",
+            "mae": "Maria"
+        }
+    },
+    {
+        "funcionario": "Cristina",
+        "idade": 20,
+        "salario": 5850.9,
+        "valeTransporte": true,
+        "filiacao": {
+            "pai": "Walter",
+            "mae": "Maria"
+        }
+    }
+]
