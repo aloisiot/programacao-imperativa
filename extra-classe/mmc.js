@@ -35,48 +35,33 @@ function calcMmc(n1, n2) {
 console.log(calcMmc(2, 4));
 
 
-// calcula o mmc entre uma lista de números:
+// calcula o mmc de uma lista de números:
 function mmcList(...args) {
-    let numsList=new Array(...args)
-    let testList = new Array(numsList.length).fill(false);
-    let mmc = 1;
     let divisor = 2;
-    let breakPoint = true;
+    let nums = args;
+    let mmc=1
 
-    while (breakPoint) {
-
-        console.log(testList.includes(false));
-        while (testList.includes(false)) {
-
-            numsList=numsList.map((n,i) => {
-
-                if (n % divisor == 0) {
-                    testList[i]=true;
-                    return n /= divisor;
-                } else {
-                    testList[i]=false;
-                    return n
-                }
-
-            });
-
-            
-            divisor++;
-
+    nums.forEach((_, i)=>{
+        
+        while(nums[i]!=1){
+            if(nums[i]%divisor==0){
+                mmc*=divisor;
+                nums=nums.map((n)=>{
+                    if(n%divisor==0){
+                        return n/divisor;
+                    }else{
+                        return n;
+                    };
+                })
+            } else {
+                divisor++;
+            }
         }
+        divisor=2
+    })
 
-        if (testList.includes(true)) mmc * divisor;
-
-        let defineBreakPoint = numsList.filter(n => n != 1);
-
-        if (defineBreakPoint.length != numsList.length) breakPoint = true;
-
-        divisor = 2;
-        testList = [false];
-    }
-
-    return mmc
+    return mmc;
 
 }
 
-console.log(mmcList(2, 4));
+console.log(mmcList(2,4,6))
